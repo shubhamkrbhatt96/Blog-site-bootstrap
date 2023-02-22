@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Write for us</a></li>
+                        </ul>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Creating a container and inside that adding the property of about.html in that section explicity defined
+        . -->
+    <!-- my-4 in the container creates margin of 4 from the top -->
+    <div class="container my-4">
+        <!-- by making it d-flex we are making it a flexbox in row feature -->
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll
+                        blow your mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5">
+                 <!-- To make the image responsive on site we added class="img-fluid" to img class -->
+                <img class="img-fluid" src="https://media.istockphoto.com/id/1401178943/photo/young-lady-using-a-laptop-to-do-research-on-the-internet-woman-working-on-a-project-mixed.jpg?b=1&s=170667a&w=0&k=20&c=aGfh1r7rvrxPz35szx1EAqEslOc2Q4c5hD5WN014jBQ="
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <!-- by making it d-flex we are making it a flexbox in row feature -->
+    <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">It's all started with iCoder idea of blog site. <span
+                    class="text-muted">It’ll
+                    blow your mind.</span></h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                prose here.</p>
+        </div>
+        <!-- order-md-2 means medium size mein its order should be 2 -->
+        <div class="col-md-5 order-md-1">
+            <!-- adding to the img class to inherit the property of svg class class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" -->
+
+            <!-- To make the image responsive on site we added class="img-fluid" to img class -->
+            <img class="img-fluid" src="https://media.istockphoto.com/id/1388719795/photo/asian-women-viewing-real-estate-websites-on-a-computer.jpg?b=1&s=170667a&w=0&k=20&c=xDZNYu0foOkpRBv0yl9Vh23FfQ-X_KULYFsipUUHhUs="
+                alt="">
+        </div>
+    </div>
+    </div>
+    <!-- by making it d-flex we are making it a flexbox in row feature -->
+    <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Second featurette heading. <span class="text-muted">It’ll blow
+                    your mind.</span></h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                prose here.</p>
+        </div>
+        <div class="col-md-5">
+             <!-- To make the image responsive on site we added class="img-fluid" to img class -->
+            <img class="img-fluid" src="https://media.istockphoto.com/id/1350926592/photo/close-up-of-woman-hands-typing-business-report-on-a-laptop-computer.jpg?b=1&s=170667a&w=0&k=20&c=Ww_IfarU7EKCk3xS9OrfQh2L6k85IyrXgh_zIcVcm-w=" alt="">
+        </div>
+    </div>
+    </div>
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2022–2023 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
